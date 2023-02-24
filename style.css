@@ -99,21 +99,20 @@ ul li {
     padding: 10px;
   }
   .contact {
-    background-color: #222;
-    color: #fff;
-    padding: 20px;
-    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 50px;
   }
   
   .contact h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
+    text-align: center;
   }
   
   .contact ul {
     list-style: none;
-    margin: 0;
     padding: 0;
+    margin: 0;
   }
   
   .contact li {
@@ -123,9 +122,5 @@ ul li {
   .contact a {
     color: #fff;
     text-decoration: none;
-  }
-  
-  .contact a:hover {
-    text-decoration: underline;
   }
 }
