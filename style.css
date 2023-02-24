@@ -1,126 +1,92 @@
-/* Set background color to dark blue */
+/* Main Styles */
+
 body {
-  background-color: #0a192f;
-  color: #f5f5f5;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  background-color: #f5f5f5;
 }
 
-/* Style the header section */
 header {
-  background-color: #172a45;
-  color: #f5f5f5;
-  padding: 20px;
+  background-color: #333;
+  color: #fff;
   text-align: center;
+  padding: 20px;
 }
 
-/* Style the navigation links */
+h1, h2, h3 {
+  font-weight: 500;
+}
+
 nav {
-  background-color: #0f1b2d;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: #2196f3;
+  color: #fff;
+  text-align: center;
   padding: 10px;
-  position: sticky;
-  top: 0;
-  z-index: 1;
 }
 
 nav a {
-  color: #f5f5f5;
+  color: #fff;
   text-decoration: none;
   margin: 0 10px;
-  padding: 5px;
-  font-weight: bold;
 }
 
 nav a:hover {
-  background-color: #5f5f5f;
+  text-decoration: underline;
 }
 
-/* Style the main content section */
 .main {
-  margin: 20px;
-  display: flex;
-  flex-wrap: wrap;
+  padding: 20px;
+  text-align: justify;
 }
 
 .section {
-  width: 100%;
-  padding: 20px;
-  box-sizing: border-box;
+  margin-bottom: 20px;
 }
 
-.section h2 {
-  margin-top: 0;
-}
-
-/* Style the education and experience lists */
 ul {
   list-style: none;
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
 ul li {
-  margin: 10px 0;
+  margin-bottom: 5px;
 }
 
-/* Style the footer section */
-.footer {
-  background-color: #172a45;
-  color: #f5f5f5;
-  padding: 20px;
+/* Contact Section */
+
+.contact {
+  background-color: #333;
+  color: #fff;
   text-align: center;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+  padding: 20px;
 }
 
-/* Media queries for mobile devices */
-@media only screen and (max-width: 768px) {
-  header {
-    padding: 10px;
-  }
+.contact a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
 
-  nav {
-    padding: 5px;
-  }
+.contact a:hover {
+  text-decoration: underline;
+}
 
-  nav a {
-    margin: 0 5px;
-    padding: 3px;
-    font-size: 14px;
-  }
+/* Media Queries */
 
-  .main {
-    margin: 10px;
-  }
-
-  .section {
-    padding: 10px;
-  }
-  .contact {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 50px;
+@media (max-width: 767px) {
+  header img {
+    display: block;
+    margin: 0 auto;
   }
   
-  .contact h2 {
+  nav {
+    display: block;
     text-align: center;
   }
   
-  .contact ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .contact li {
-    margin-bottom: 10px;
-  }
-  
-  .contact a {
-    color: #fff;
-    text-decoration: none;
+  nav a {
+    display: block;
+    margin: 5px;
   }
 }
